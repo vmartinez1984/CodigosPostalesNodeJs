@@ -8,10 +8,11 @@
             "email": "ahal_tocob@hotmail.com"
         }
     },
-    "host": "127.0.0.1:3000",
+    "host": "vmartinez.herokuapp.com",
     "basePath": "/api",
     "schemes": [
-        "http"
+        "http",
+        "https"
     ],
     "paths": {
         "/codigosPostales/estados": {
