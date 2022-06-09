@@ -11,11 +11,11 @@ const app = express();
 //Conectamos a la base de datos
 conectarDB();
 
+app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(require("./controllers/zipCodesController"));
 app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.use(cors())
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("El servidor está inicializado en el puerto 3000");
