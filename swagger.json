@@ -11,8 +11,8 @@
     "host": "vmartinez.herokuapp.com",
     "basePath": "/api",
     "schemes": [
-        "http",
-        "https"
+        "https",
+        "http"
     ],
     "paths": {
         "/codigosPostales/estados": {
